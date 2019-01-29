@@ -1,0 +1,51 @@
+view,image,button{
+  margin:0;
+  padding:0;
+  border:none;
+  box-sizing:border-box;
+}
+
+page {
+  flex: 1;
+  display: flex;
+  background: #f7f7f7;
+}
+
+image{
+  display:block;
+}
+
+button{
+  border:none;
+}
+
+@keyframes in{
+  0%{
+    opacity:0;
+    visibility: hidden;
+    transform:scale(0.0);
+  }
+  75%{
+    opacity:1;
+    visibility: visible;
+    transform:scale(1.2);
+  }
+  100{
+    opacity:0;
+    visibility: visible;
+    transform:scale(1.0);
+  }
+}
+
+@keyframes out{
+  0%{
+    opacity:1;
+    visibility: visible;
+    transform:scale(1.0);
+  }
+  100{
+    opacity:0;
+    visibility: hidden;
+    transform:scale(1.2);
+  }
+}

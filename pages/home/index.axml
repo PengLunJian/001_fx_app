@@ -1,0 +1,19 @@
+<view class="home">
+  <view class="inner">
+    <view class="photo">
+      <view class="photo-item">
+        <image src="../../assets/images/photo@2x.png" mode="scaleToFill" />
+      </view>
+      <view class="photo-item">
+        <image src="../../assets/images/photo@2x.png" mode="scaleToFill" />
+      </view>
+      <view class="photo-item">
+        <image src="../../assets/images/photo@2x.png" mode="scaleToFill" />
+      </view>
+    </view>
+    <view class="button">
+      <button class="btn-confirm" onTap="defaultTap">立即抽奖</button>
+    </view>
+  </view>
+  <modal></modal>
+</view>

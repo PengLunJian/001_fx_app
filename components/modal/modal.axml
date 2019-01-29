@@ -1,0 +1,14 @@
+<view class="modal in">
+  <view class="modal-bg"></view>
+  <view class="modal-content">
+    <view class="modal-header"></view>
+    <view class="modal-body">
+      <view class="modal-card">
+        <image src="../../assets/images/photo@2x.png" mode="scaleToFill" />
+      </view>
+    </view>
+    <view class="modal-footer">
+      <button class="btn-cancel">+</button>
+    </view>
+  </view>
+</view>
