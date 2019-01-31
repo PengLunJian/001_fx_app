@@ -1,4 +1,24 @@
-.modal{}
+.modal{
+  visibility: hidden;
+}
+
+.modal.in .modal-bg{
+  opacity: 1;
+  visibility: visible
+}
+
+.modal.out .modal-bg{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.in .modal-content{
+  animation: in 400ms ease-out forwards;
+}
+
+.modal.out .modal-content{
+  animation: out 400ms ease-out forwards;
+}
 
 .modal-bg{
   position:fixed;
@@ -7,17 +27,19 @@
   z-index: 1000;
   width:100%;
   height:100%;
+  transition:all 300ms ease-out;
   background-color:rgba(0,0,0,.5);
 }
 
 .modal-content{
   position:fixed;
-  top:0;
-  left:0;
+  top:50%;
+  left:50%;
+  width:auto;
+  height:auto;
   z-index: 1001;
-  width:100%;
-  height:100%;
-  padding:0 120rpx;
+  margin-top:-362.5rpx;
+  margin-left:-255rpx;
 }
 
 .modal-header{}
@@ -25,24 +47,55 @@
 .modal-body{
   width:100%;
   height:615rpx;
-  border-radius:10rpx;
+  border-radius:15rpx;
+  padding:100rpx 64rpx;
   background-color:#ffdb98;
 }
 
-.modal-body .card{
+.modal-body .modal-inner{
+  width:382rpx;
+  height:400rpx;
+  position:relative;
   background-size:100% auto;
   background-repeat: no-repeat;
   background-position:center center;
   background-image: url('../../assets/images/modal.png');
 }
 
-.modal-body image{
-  width:140rpx;
-  height:140rpx;
+.modal-body .modal-inner image{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:122rpx;
+  height:122rpx;
+  margin-top:-35rpx;
+  margin-left:-61rpx;
+  border-radius:100%;
 }
 
-.modal-footer{}
+.modal-body .modal-inner text{
+  position:absolute;
+  left:0;
+  bottom:60rpx;
+  width:100%;
+  text-align: center;
+  font-size:30rpx;
+  color:#ffffff;
+}
 
-.modal-footer .btn-cancel{
+.modal-footer{
+  padding-top:60rpx;
+}
+
+.modal-footer .btn-close{
+  width:50rpx;
+  height:50rpx;
+  margin:0 auto;
+  line-height:46rpx;
+  border-radius:100%;
+  transform:rotate(45deg);
+  border:2rpx solid #ffffff;
   background-color:transparent;
+  font-size:40rpx;
+  color:#ffffff;
 }

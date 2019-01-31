@@ -1,4 +1,24 @@
 Page({
+  data:{
+    isShow:false,
+    persons:[
+      {
+        name:'金泰熙',
+        selected:false,
+        img:'../../assets/images/photo01.jpg'
+      },
+      {
+        name:'高圆圆',
+        selected:true,
+        img:'../../assets/images/photo02.jpg'
+      },
+      {
+        name:'倪妮',
+        selected:false,
+        img:'../../assets/images/photo03.jpg'
+      }
+    ]
+  },
   onLoad(query) {
     // 页面加载
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
@@ -32,4 +52,17 @@ Page({
       path: 'pages/home/index',
     };
   },
+  onHandleStart(){
+    this.onHandleShowModal();
+  },
+  onHandleShowModal(){
+    this.setData({
+      isShow:true
+    });
+  },
+  onHandleHideModal(){
+    this.setData({
+      isShow:false
+    });
+  }
 });

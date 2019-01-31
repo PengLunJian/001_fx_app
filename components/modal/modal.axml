@@ -1,14 +1,15 @@
-<view class="modal in">
-  <view class="modal-bg"></view>
+<view class="{{clazz}}">
+  <view class="modal-bg" onTap="onHandleClose"></view>
   <view class="modal-content">
     <view class="modal-header"></view>
     <view class="modal-body">
-      <view class="modal-card">
-        <image src="../../assets/images/photo@2x.png" mode="scaleToFill" />
+      <view class="modal-inner">
+        <image src="{{person.img}}" mode="scaleToFill" />
+        <text class="modal-name">{{person.name}}</text>
       </view>
     </view>
     <view class="modal-footer">
-      <button class="btn-cancel">+</button>
+      <button class="btn-close" onTap="onHandleClose">+</button>
     </view>
   </view>
 </view>

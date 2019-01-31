@@ -30,8 +30,8 @@ button{
     visibility: visible;
     transform:scale(1.2);
   }
-  100{
-    opacity:0;
+  100%{
+    opacity:1;
     visibility: visible;
     transform:scale(1.0);
   }
@@ -43,7 +43,12 @@ button{
     visibility: visible;
     transform:scale(1.0);
   }
-  100{
+  25%{
+    opacity:1;
+    visibility: visible;
+    transform:scale(0.8);
+  }
+  100%{
     opacity:0;
     visibility: hidden;
     transform:scale(1.2);
