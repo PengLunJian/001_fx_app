@@ -1,0 +1,32 @@
+{
+  "name": "001_fx_app",
+  "version": "1.0.0",
+  "description": "This is alipay applet",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "mockjs": "^1.0.1-beta3"
+  },
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "webpack": "^4.29.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengLunJian/001_fx_app.git"
+  },
+  "keywords": [
+    "alipay",
+    "app"
+  ],
+  "author": "Penglunjian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PengLunJian/001_fx_app/issues"
+  },
+  "homepage": "https://github.com/PengLunJian/001_fx_app#readme"
+}

@@ -38,7 +38,7 @@
 
 .photo-item:nth-child(2){
   transform:scale(1.2);
-  box-shadow:0 0 15rpx rgba(0,0,0,.15);
+  box-shadow:0 0 30rpx rgba(0,0,0,0.15);
 }
 
 .photo-item:nth-child(3){

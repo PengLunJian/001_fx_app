@@ -1,14 +1,8 @@
 <view class="home">
   <view class="inner">
     <view class="photo">
-      <view class="photo-item">
-        <image src="../../assets/images/photo01.jpg" mode="scaleToFill" />
-      </view>
-      <view class="photo-item">
-        <image src="../../assets/images/photo02.jpg" mode="scaleToFill" />
-      </view>
-      <view class="photo-item">
-        <image src="../../assets/images/photo03.jpg" mode="scaleToFill" />
+      <view class="photo-item" a:for={{persons}}>
+        <image src="{{item.img}}" mode="scaleToFill" />
       </view>
     </view>
     <view class="button">
