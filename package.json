@@ -1,5 +1,5 @@
 {
-  "name": "001_fx_app",
+  "name": "001_bx_ymt",
   "version": "1.0.0",
   "description": "This is alipay applet",
   "main": "app.js",
@@ -8,12 +8,18 @@
     "mockjs": "^1.0.1-beta3"
   },
   "devDependencies": {
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "webpack": "^4.29.3"
+    "autoprefixer": "^7.2.5",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-watch": "^4.3.10",
+    "gulp-postcss": "^7.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.5.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config build/webpack.config.js"
   },
   "repository": {
     "type": "git",
