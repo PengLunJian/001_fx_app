@@ -1,0 +1,71 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../../assets/images/bg.png');
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-perspective: 800rpx;
+          perspective: 800rpx;
+}
+.photo {
+  position: relative;
+  top: 150rpx;
+  width: 200rpx;
+  height: auto;
+  margin: 0 auto;
+  background-color: transparent;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.photo-item {
+  width: 200rpx;
+  height: 200rpx;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.photo-item:nth-child(1) {
+  -webkit-filter: blur(8rpx);
+          filter: blur(8rpx);
+  -webkit-transform: translateZ(-50rpx);
+          transform: translateZ(-50rpx);
+}
+.photo-item:nth-child(2) {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.15);
+}
+.photo-item:nth-child(3) {
+  -webkit-filter: blur(8rpx);
+          filter: blur(8rpx);
+  -webkit-transform: translateZ(-50rpx);
+          transform: translateZ(-50rpx);
+}
+.photo-item image {
+  width: 100%;
+  height: 100%;
+}
+.button {
+  position: absolute;
+  left: 0;
+  bottom: 200rpx;
+  width: 100%;
+}
+.btn-confirm {
+  display: block;
+  width: 500rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-radius: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: #d0021b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd790), to(#ffa220));
+  background: linear-gradient(#ffd790, #ffa220);
+}

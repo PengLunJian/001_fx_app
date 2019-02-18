@@ -11,20 +11,30 @@ var srcPath = 'src/',
     // devPath = 'build/',
     devPath = 'build/';
 
-//  清除build、dist
+//  清除build
 gulp.task('clean', function () {
-    return gulp.src([devPath])
+    return gulp.src(devPath)
         .pipe(plugins.clean({force: true}));
 });
 
-//  执行LESS编译、添加浏览器前缀、压缩并输出
+gulp.task('copy', function () {
+    return gulp.src(srcPath + 'app.less')
+        .pipe(plugins.less())
+        .pipe(plugins.rename({extname: '.acss'}))
+        .pipe(gulp.dest(devPath));
+});
+
+//  执行LESS编译、添加浏览器前缀
 gulp.task('less', function () {
-    return gulp.src([srcPath + 'less/**/*.less',
-        '!' + srcPath + 'less/variable.less'])
+    var paths = [
+        srcPath + '**/*.less',
+        '!' + srcPath + 'assets/less/*'
+    ];
+    return gulp.src(paths)
         .pipe(plugins.less())
         .pipe(plugins.postcss(postCssConfig))
-        .pipe(gulp.dest(devPath + 'css'))
-        .pipe(plugins.connect.reload());
+        .pipe(plugins.rename({extname: '.acss'}))
+        .pipe(gulp.dest(devPath));
 });
 
 //  构建未压缩混淆版本到build目录

@@ -1,16 +1,17 @@
 <view class="home">
-  <view class="inner">
-    <view class="photo">
-      <view class="photo-item" a:for={{persons}}>
-        <image src="{{item.img}}" mode="scaleToFill" />
-      </view>
+    <view class="inner">
+        <view class="photo">
+            <view class="photo-item" a:for={{persons}}>
+                <image src="{{item.img}}" mode="scaleToFill"/>
+            </view>
+        </view>
+        <view class="button">
+            <button class="btn-confirm" onTap="onHandleStart">立即抽奖</button>
+        </view>
     </view>
-    <view class="button">
-      <button class="btn-confirm" onTap="onHandleStart">立即抽奖</button>
-    </view>
-  </view>
-  <modal isShow={{isShow}}
-  person={{persons[1]}}
-  onHandleShowModal="onHandleShowModal"
-  onHandleHideModal="onHandleHideModal"></modal>
+
+    <modal isShow={{isShow}}
+           person={{persons[1]}}
+           onHandleShowModal="onHandleShowModal"
+           onHandleHideModal="onHandleHideModal"></modal>
 </view>
