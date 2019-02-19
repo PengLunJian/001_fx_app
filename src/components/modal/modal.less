@@ -38,8 +38,8 @@
   width: auto;
   height: auto;
   z-index: 1001;
-  margin-top: -362.5 rpx;
-  margin-left: -255 rpx;
+  margin-top: unit(-362.5, rpx);
+  margin-left: unit(-255, rpx);
 }
 
 .modal-header {
@@ -47,15 +47,15 @@
 
 .modal-body {
   width: 100%;
-  height: 615 rpx;
-  border-radius: 15 rpx;
-  padding: 100 rpx 64 rpx;
+  height: unit(615, rpx);
+  border-radius: unit(15, rpx);
+  padding: unit(100, rpx) unit(64, rpx);
   background-color: #ffdb98;
 }
 
 .modal-body .modal-inner {
-  width: 382 rpx;
-  height: 400 rpx;
+  width: unit(382, rpx);
+  height: unit(400, rpx);
   position: relative;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -77,26 +77,26 @@
 .modal-body .modal-inner text {
   position: absolute;
   left: 0;
-  bottom: 60 rpx;
+  bottom: unit(60, rpx);
   width: 100%;
   text-align: center;
-  font-size: 30 rpx;
+  font-size: unit(30, rpx);
   color: #ffffff;
 }
 
 .modal-footer {
-  padding-top: 60 rpx;
+  padding-top: unit(60, rpx);
 }
 
 .modal-footer .btn-close {
-  width: 50 rpx;
-  height: 50 rpx;
+  width: unit(50, rpx);
+  height: unit(50, rpx);
   margin: 0 auto;
-  line-height: 46 rpx;
+  line-height: unit(46, rpx);
   border-radius: 100%;
   transform: rotate(45deg);
-  border: 2 rpx solid #ffffff;
+  border: unit(2, rpx) solid #ffffff;
   background-color: transparent;
-  font-size: 40 rpx;
+  font-size: unit(40, rpx);
   color: #ffffff;
 }

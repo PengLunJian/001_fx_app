@@ -1,3 +1,6 @@
+import http from '../../http/index';
+import apis from '../../apis/index';
+
 Page({
     data: {
         isShow: false,
@@ -20,6 +23,11 @@ Page({
         ]
     },
     onLoad(query) {
+        const data = {
+            username: 'PENGLUNJIAN',
+            password: '18368235508'
+        }
+        http.post(apis.login, data);
         // 页面加载
         console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
     },

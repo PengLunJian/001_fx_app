@@ -1,6 +1,6 @@
 import apis from '../apis';
 import store from './store';
-import axios from '../axios';
+import axios from '../http';
 import * as ACTION_TYPES from './actionTypes';
 
 /**
